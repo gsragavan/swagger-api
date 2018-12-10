@@ -1,0 +1,8 @@
+---
+applications:
+- name: swagger-api
+  instances: 1
+  health-check-type: none
+  host: swagger-api
+  buildpack: java_buildpack
+  path: target/swagger-api-0.0.1-SNAPSHOT.jar
