@@ -21,7 +21,7 @@ pipeline {
 	  stage('DEPLOY TO PCF') { 
             steps {
                 echo 'pivotal'
-                bat "cf login -a api.run.pivotal.io -o devorganization -s dev1 -u muthyama@hcl.com -p Pchinna23* --skip-ssl-validation"
+                bat "cf login -a api.run.pivotal.io -o srganesh-springboot -s development -u srganesh@hcl.com -p Pivotal#001 --skip-ssl-validation"
 	            	bat "cf push swagger-api"
             }
         } 
